@@ -1,73 +1,176 @@
-section{
-	position: relative;
-	width: 100%;
-}
-section header{
-	position: relative;
-}
-section header ul{
-	float: right;
-}
-section header ul li{
-	margin-left: 20px;
-	float: left;
-}
-section header ul li a{
-	text-decoration: none;
+body{
 	font-family: arial,sans-serif;
-	font-size: 14px;
+	font-size: 13px;  
+} 
+ul{  
+	list-style: none;  
+	padding: 0px;  
+	line-height: 0px;
+}  
+li{  
+	display: inline-block;  
+	padding: 5px 7px;  
+	vertical-align: middle;
+}  
+div, footer{  
+	padding: 4px 20px;  
 }
-section header ul li button{
-	color: white;
-	background: blue;
-	border: none;
-	outline: none;
-	padding: 10px 15px;
-	border-radius: 3px;
-	cursor: pointer;
+div img{
+	list-style: none;  
+	color: #000;  
+	opacity: 0.85;  
+}  
+div a{  
+	text-decoration: none;  
+	color: #000;  
+	opacity: 0.75;  
+}  
+div ul li a:hover{  
+	text-decoration-line: underline;  
+	opacity: 0.65;  
+}  
+.r_div{  
+	float: right;  
+	position: relative;  
+	padding-top: 0px;  
+	padding-right: 8px;  
 }
-section .main{
-	width: 800px;
+.apps{  
+	width: 16px;  
+	height: 16px;  
+	margin-top: -2px;  
+	padding-right: 9px;  
+	opacity: 0.75;  
+ }  
+.apps:hover{  
+	opacity: 1;  
+} 
+.sign_in{  
+	border: 1px solid #4285f4;  
+  	outline: none;  
+ 	background: #4285f4;  
+  	display: inline-block;  
+  	line-height: 28px;  
+  	padding: 0 12px;  
+  	border-radius: 2px;  
+}  
+.sign_in a{  
+  	font-weight: bold;  
+ 	color: #fff;  
+  	opacity: 1;  
+  	text-decoration: none;
+}  
+.sign_in a:hover{  
+  	opacity: 1;  
+  	text-decoration: none;  
+}  
+.sign_in:hover{  
+  	opacity: 1;  
+  	box-shadow: 0 1.5px 0 0 #e4e4e4;  
+}    
+.cntr_pg{  
+  	position: absolute;  
+  	top: 25%;  
+  	left: 50%;  
+  	margin-right: -50%;  
+	transform: translate(-50%, -50%)  
+}  
+.logo{  
+	display: 100%;  
+  	height: 100px;
+ 	width: 272px;  
+  	display: block;  
+  	margin: auto;  
+}  
+.form {  
+	display: block;  
+  	margin: auto;  
+}  
+.search_bar{  
+	border-radius: 40px;  
+  	width: 585px;  
+  	margin: auto;  
+  	height: 39px;  
+  	border: .7px solid #E4E4E4;  
+  	background-color: #fff;  
+  	box-shadow:0px 1px 4px #E4E4E4;  
+  	margin-bottom: 20px;  
+  	outline: none;  
+  	text-indent: 15px;  
+}  
+.search_bar:hover, .search_bar:active{  
+  	padding-bottom: 2px;  
+  	padding-top: 1px;  
+  	margin-top: -1px;  
+  	width: 585px;
+	box-shadow:0px 3px 8px #E4E4E4;  
+  	outline: none;  
+} 
+.search{  
+  	width: 20px;  
+  	height: 20px;  
+  	position: relative;  
+  	left: 20px;  
+  	top: 34px;  
+} 
+.mic{  
+  	width: 30px;  
+  	height: 20px;  
+  	position: relative;  
+  	left: 520px;  
+  	top: 34px;  
+}  
+.submit_buttons{  
+  	display: inline-block;  
+  	height: 36px;  
+      	cursor: pointer;  
+  	line-height: 27px;  
+  	background-color: #f2f2f2;  
+  	border: 1px solid #f2f2f2;  
+  	border-radius: 2px;  
+  	color: #757575;  
+  	cursor: default;  
+  	font-family: arial,sans-serif;  
+  	font-size: 13px;  
+  	font-weight: bold;  
+  	margin: 11px 4px;  
+  	min-width: 54px; 
+	padding: 0 16px;  
+  	text-align: center;  
+  	position: relative;  
+  	left: 25%;  
+  	right: -50%;  
+      	cursor: pointer;  
+}  
+.submit_buttons:hover{  
+  	border: .7px solid #d0d0d0;  
+  	color: #000;  
+  	box-shadow:0px 1px 4px #E4E4E4; 
+} 
+.l_ftr
+{  
+ 	float: left;  
 }
-section .main .searchbox .search{
-	position: relative;
-	width: 600px;
-	left: 45%;
-	padding: 15px;
-	border-radius: 30px;
-	padding-left: 45px;
-	padding-right: 60px;
-	border: 1px solid grey;
-	outline: none;
-	box-shadow: 0 1px;
-	transform: translate(0%, 50%);
+.l_ftr{
+	clear: left;
 }
-section .main .searchbox .icons{
-	position: absolute;
-	top: 220px;
-	left: 375px;
-}
-
-section .main .searchbox .mic{
-	position: absolute;
-	top: 220px;
-	left: 920px;
-}
-section .main .searchbox{
-	margin-top: 20px;
-}
-section .main .searchbutton button{
-	padding: 15px 20px;
-	color: grey;
-	border: none;
-	cursor: pointer;
-	margin: 5px;
-	border-radius: 4px;
-	border: 1px solid transparent;
-	position: relative;
-	text-align: center;
-	transform: translate(400%, 50%);
-}
-section .main .searchbutton button:hover{
-	border: 1px solid grey;	
+.r_ftr{  
+  	float: right;
+}  
+footer{  
+  	position: absolute;  
+  	left: 0;  
+  	right: 0;  
+  	bottom: 0;  
+  	color: #666666;  
+  	background-color: #f2f2f2;  
+  	border-top: solid 1px #e4e4e4;  
+}  
+footer a{  
+  	text-decoration: none;  
+  	color: #000;  
+  	opacity: 0.75;  
+}  
+footer a:hover{  
+  	text-decoration-line: underline;  
 }

@@ -1,42 +1,73 @@
-body
-{
-margin:0;
-padding:0;
-background:#fff;
+section{
+	position: relative;
+	width: 100%;
 }
-.main
-{
-position: absolute;
-top: 25%;
-left: 50%;
-transform: translate(-50%, -50%);
+section header{
+	position: relative;
 }
-.google
-{
-position: relative;
-width: 300px;
+section header ul{
+	float: right;
 }
-.searchbar
-{
-width: 400px;
-height: 50px;
-position: relative;
-transform: translate(-10%, 50%);
+section header ul li{
+	margin-left: 20px;
+	float: left;
 }
-input[type="text"]
-{
-position: absolute;
-width: 100%;
-height: 100%;
-border: 1px;
-border-radius: 50px;
-left: 0;
-padding 0 40px 0 45px;
+section header ul li a{
+	text-decoration: none;
+	font-family: arial,sans-serif;
+	font-size: 14px;
 }
-.searchbutton
-{
-position: relative;
-top: 100px;
-text-align: center;
-transform: translate(-10%, 50%);
+section header ul li button{
+	color: white;
+	background: blue;
+	border: none;
+	outline: none;
+	padding: 10px 15px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+section .main{
+	width: 800px;
+}
+section .main .searchbox .search{
+	position: relative;
+	width: 600px;
+	left: 45%;
+	padding: 15px;
+	border-radius: 30px;
+	padding-left: 45px;
+	padding-right: 60px;
+	border: 1px solid grey;
+	outline: none;
+	box-shadow: 0 1px;
+	transform: translate(0%, 50%);
+}
+section .main .searchbox .icons{
+	position: absolute;
+	top: 220px;
+	left: 375px;
+}
+
+section .main .searchbox .mic{
+	position: absolute;
+	top: 220px;
+	left: 920px;
+}
+section .main .searchbox{
+	margin-top: 20px;
+}
+section .main .searchbutton button{
+	padding: 15px 20px;
+	color: grey;
+	border: none;
+	cursor: pointer;
+	margin: 5px;
+	border-radius: 4px;
+	border: 1px solid transparent;
+	position: relative;
+	text-align: center;
+	transform: translate(400%, 50%);
+}
+section .main .searchbutton button:hover{
+	border: 1px solid grey;	
 }
